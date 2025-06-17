@@ -1,3 +1,5 @@
+https://xenia1991.github.io/test-sputnik/
+
 Создайте компонент ProductCard, который принимает следующие данные через props:
 
 - Название товара (title)
