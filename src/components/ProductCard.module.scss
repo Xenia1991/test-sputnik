@@ -1,0 +1,76 @@
+$card-background: #EAE7DC;
+$price-background: #E98074;
+$headers: #E85A4F;
+$text-color: #1A1A1D;
+$border-shadow: rgb(230, 226, 226);
+
+* {
+    margin: 0;
+}
+
+.card {
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: $card-background;
+    border: 1px solid $border-shadow;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 500px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.card:hover {
+    box-shadow: 5px 5px 25px 5px $border-shadow;
+}
+
+.firstSection,
+.secondSection {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 250px;
+    height: auto;
+}
+
+.title,
+.priceHeader {
+    color: $headers;
+    font-weight: 700;
+}
+
+.priceHeader {
+    padding: 10px 0;
+}
+
+.origin,
+.price {
+    padding: 10px;
+    color: $text-color;
+}
+
+.pricesList {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    @media (min-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.price {
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: $price-background;
+    border-radius: 4px;
+}
